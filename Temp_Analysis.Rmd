@@ -1,0 +1,101 @@
+
+```{r}
+
+data <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/tempdata2.txt")
+
+plot(data, type="p", main="Scatter Plot", xlab = "Average Weekly Temperature / °C", ylab="Number of cases")
+
+```
+
+```{r}
+
+library("broom")
+dengue1 <- lm(data[,1]~data[,2])
+summary(dengue1)
+
+tidy(dengue1)
+glance(dengue1)
+par(mfrow=c(2,2))
+plot(dengue1)
+```
+```{r}
+data2 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/tempdata3.txt")
+plot(data2, type="p", main="Scatter Plot", xlab = "Average Weekly Temperature / °C", ylab="Number of cases")
+
+
+```
+
+```{r}
+library("broom")
+dengue2 <- lm(data2[,1]~data2[,2])
+summary(dengue2)
+
+tidy(dengue2)
+glance(dengue2)
+par(mfrow=c(2,2))
+plot(dengue2)
+```
+
+```{r}
+data3 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/rainfalldata.txt")
+plot(data3, type="p", main="Scatter Plot", xlab = "Average rainfall / mm", ylab="Number of cases")
+```
+
+```{r}
+library("broom")
+dengue3 <- lm(data3[,1]~data3[,2])
+summary(dengue3)
+
+tidy(dengue3)
+glance(dengue3)
+par(mfrow=c(2,2))
+plot(dengue3)
+```
+```{r}
+data4 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/rainfalldata2.txt")
+plot(data4, type="p", main="Scatter Plot", xlab = "Average rainfall / mm", ylab="Number of cases")
+```
+```{r}
+library("broom")
+dengue4 <- lm(data4[,1]~data4[,2])
+summary(dengue4)
+
+tidy(dengue4)
+glance(dengue4)
+par(mfrow=c(2,2))
+```
+
+
+```{r}
+data5 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/raintempdata.txt")
+
+library("broom")
+dengue5 <- lm(data5[,3]~data5[,1]+data5[,2])
+summary(dengue5)
+
+tidy(dengue5)
+glance(dengue5)
+par(mfrow=c(2,2))
+
+
+```
+```{r}
+data6 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/chisq1.txt")
+data6
+chisq.test(data6)
+
+
+```
+```{r}
+data7 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/chisq2.txt")
+data7
+chisq.test(data7)
+```
+
+
+```{r}
+data8 <- read.table("C:/Users/Asus/Desktop/Justin's Folder/Uni/DataFest/chisq3.txt")
+data8
+chisq.test(data8)
+
+```
