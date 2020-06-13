@@ -6,13 +6,13 @@ R code is the .rmd (R MarkDown) file
 
 Data Sources (.txt files):
 
-chisq1 - results of 
-ch1sq2 - results of
-chisq3 - results of
+chisq1 - results for Chi-Squared Test comparing number of cases in 2013 and 2020 (so far)
+ch1sq2 - results for Chi-Squared Test comparing number of cases in 2019 and 2020 (so far)
+chisq3 - results for Chi-Squared Test comparing number of cases in 2015 and 2020 (so far)
 
 rainfalldata - 
 rainfalldata2 - 
 
-raintempdata - 
-tempdata2 -
-tempdata3 - 
+raintempdata - multiple regression between number of cases and a combination of rain and temp
+tempdata2 - results of regression test between temperature and number of cases over time
+tempdata3 - results of regression test between temperature and number of cases over time
