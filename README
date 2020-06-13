@@ -1,0 +1,18 @@
+Source Data and R code used in statistical analysis. Data taken from https://www.nea.gov.sg/.
+
+
+R code is the .rmd (R MarkDown) file
+
+
+Data Sources (.txt files):
+
+chisq1 - results of 
+ch1sq2 - results of
+chisq3 - results of
+
+rainfalldata - 
+rainfalldata2 - 
+
+raintempdata - 
+tempdata2 -
+tempdata3 - 
